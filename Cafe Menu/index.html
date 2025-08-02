@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BREWIN MENU</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <style>
+  body {
+    background: linear-gradient(to right, #f7debe, #fff8f1);
+  }
+  header {
+    background: linear-gradient(to right, #f7e8d6, #fff8f1);
+    border-bottom: 2px solid #e0c4a8;
+  }
+
+  header h1 {
+    color: #6c4b3c;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+  }
+
+  header p {
+    font-style: italic;
+  }
+  .card {
+    background-color: #fdf4e7; /* soft beige */
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+  }
+
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+
+  .card-body {
+    color: #5e4432; 
+  }
+
+  .btn-primary {
+    background-color: #a66e4a;
+    border-color: #a66e4a;
+  }
+
+  .btn-primary:hover {
+    background-color: #7d5136;
+    border-color: #7d5136;
+  }
+</style>
+<style>
+  @keyframes fadeZoom {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  header h1 {
+    animation: fadeZoom 1.2s ease-out forwards;
+    opacity: 0;
+  }
+</style>
+
+
+</head>
+<body>
+  <header class="text-center py-5 bg-light">
+  <h1 style="font-size: 6rem; font-weight: 500; letter-spacing: 2px;">BREWIN</h1>
+  <p class="lead text-muted">Sip. Relax. Repeat.</p>
+</header>
+
+    <div class="container-fluid" class="p-3 mb-2 bg-danger-subtle text-danger-emphasis">
+    <div class="container-fluid" mb-2>
+
+        <ul class="nav nav-tabs" >
+  <li class="nav-item">
+    <a class="nav-link active" style="background-color: rgb(245, 206, 158);" aria-current="page" href="#"><b>BREWIN</b></a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#">HOME</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#">ABOUT US</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="#">FEEDBACK</a>
+  </li>
+</ul>
+    </div>
+    
+    <div class="container-fluid" mt="50">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhZmV8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="jewellery image" style="height: 450px; object-fit: cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Welcome to Brewin' Café</h5>
+        <p>Where every cup tells a story. Freshly brewed coffee and cozy vibes await you.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="https://blog.cindrebay.com/wp-content/uploads/2019/04/19-1.jpg" class="d-block w-100" style="height: 450px; alt="coffe photo">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Start Your Day Right!</h5>
+        <p>Enjoy our handcrafted lattes and freshly baked croissants every morning.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="https://images.squarespace-cdn.com/content/v1/56120223e4b0e1ea7533e421/529ded8c-6383-4a7a-88dd-7beaa6cb12b1/DSC02063.jpg" class="d-block w-100" style="height:450px; alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Delicious Lunch, Daily Made</h5>
+        <p>From pasta to paninis — savor hearty meals made with love and local ingredients.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    <div class="container mt-5">
+  <div class="row">
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCY40GHaesy_cGIta3u40dvmozumAGzPzr0Q&s" class="card-img-top" alt="Coffee 1">
+        <div class="card-body">
+          <h5 class="card-title">Espresso</h5>
+          <p class="card-text">Strong, rich, and bold — a classic Italian brew.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://media.istockphoto.com/id/505168330/photo/cup-of-cafe-latte-with-coffee-beans-and-cinnamon-sticks.jpg?s=612x612&w=0&k=20&c=h7v8kAfWOpRapv6hrDwmmB54DqrGQWxlhP_mTeqTQPA=" class="card-img-top" alt="Coffee 2">
+        <div class="card-body">
+          <h5 class="card-title">Cappuccino</h5>
+          <p class="card-text">A warm hug of espresso, milk, and foam.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhdzROjX-DRD7m7PC_uvUQy533DNov4TDsjg&s" class="card-img-top" alt="Coffee 3">
+        <div class="card-body">
+          <h5 class="card-title">Latte</h5>
+          <p class="card-text">Creamy milk with smooth espresso flavor.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJJv5CKxzgGRl2c76iJI4eUSNOl5sogKljoQ&s" class="card-img-top" alt="Coffee 4">
+        <div class="card-body">
+          <h5 class="card-title">Iced Americano</h5>
+          <p class="card-text">Smooth and mellow — espresso with hot water.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards 5 to 8 -->
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://images.immediate.co.uk/production/volatile/sites/2/2021/11/Mocha-1fc71f7.png?resize=1200%2C630" class="card-img-top" alt="Coffee 5">
+        <div class="card-body">
+          <h5 class="card-title">Mocha</h5>
+          <p class="card-text">Chocolate meets espresso — sweet and bold.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFVeCSzssRRjdLL0uvaezNM0Ge_GVCJw6o4Q&s" class="card-img-top" alt="Coffee 6">
+        <div class="card-body">
+          <h5 class="card-title">Macchiato</h5>
+          <p class="card-text">Espresso with a splash of milk foam.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwm6PB0Bq2SSns3KU_cYiyt6XQ5iYwjl-aZg&s" class="card-img-top" alt="Coffee 7">
+        <div class="card-body">
+          <h5 class="card-title">Cold Brew</h5>
+          <p class="card-text">Slow-steeped for a smooth, refreshing taste.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_Sjis_rjkJwoPLxzSkCv0hP9XJprCYKEQeg&s" class="card-img-top" alt="Coffee 8">
+        <div class="card-body">
+          <h5 class="card-title">Flat White</h5>
+          <p class="card-text">Silky textured milk over a double shot of espresso.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards 9 to 12 -->
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://www.livveganstrong.com/wp-content/uploads/2024/08/blueberry-iced-latte.jpg" class="card-img-top" alt="Coffee 9">
+        <div class="card-body">
+          <h5 class="card-title">Iced Latte</h5>
+          <p class="card-text">Cool and refreshing — espresso over ice.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://i.pinimg.com/736x/a7/dd/7d/a7dd7dfa759e438c4128d582a33179a7.jpg" class="card-img-top" alt="Coffee 10">
+        <div class="card-body">
+          <h5 class="card-title">Affogato</h5>
+          <p class="card-text">Vanilla ice cream topped with a shot of espresso.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_0S6ybWTOUPJzvqGdBjyzf3QUh7gUq-WWXA&s" class="card-img-top" alt="Coffee 11">
+        <div class="card-body">
+          <h5 class="card-title">Turkish Coffee</h5>
+          <p class="card-text">Strong, thick coffee with a rich aroma and fine foam.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://thebigmansworld.com/wp-content/uploads/2025/01/nitro-cold-brew3.jpg" class="card-img-top" alt="Coffee 12">
+        <div class="card-body">
+          <h5 class="card-title">Nitro Cold Brew</h5>
+          <p class="card-text">Infused with nitrogen for a creamy texture.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cards 13 to 16 -->
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZAKNxs0Tllnl6gwOtuj3wNmd3MJ4dMeEMhg&s" class="card-img-top" alt="Coffee 13">
+        <div class="card-body">
+          <h5 class="card-title">French Press</h5>
+          <p class="card-text">Full-bodied flavor with a rich aroma.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://mymocktailforest.com/wp-content/uploads/2024/03/non-alcoholic-irish-coffee-7.jpg" class="card-img-top" alt="Coffee 14">
+        <div class="card-body">
+          <h5 class="card-title">Irish Coffee</h5>
+          <p class="card-text">Coffee blended with whiskey and cream.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsD2RKaN-OY-35n37KdqGfpg4CgCgIGvH8VA&s" class="card-img-top" alt="Coffee 15">
+        <div class="card-body">
+          <h5 class="card-title">Cortado</h5>
+          <p class="card-text">Equal parts espresso and steamed milk.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-md-3 mb-4">
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzelIB1MpmBk4d8TyK8pUE840QsCa_10PoEw&s" class="card-img-top" alt="Coffee 16">
+        <div class="card-body">
+          <h5 class="card-title">Chai Latte</h5>
+          <p class="card-text">Spiced black tea with steamed milk — a cozy twist.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="text-white mt-5 pt-5 pb-4" style="background-color: #6c4b3c;">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <h4 class="mb-3">BREWIN Café</h4>
+        <p>📍 Near Anand Bhavan,Laxminagar, India</p>
+        <p>🕒 Open Daily: 8:00 AM – 10:00 PM</p>
+        <p>📞 +91 11221 12211</p>
+        <p>📧 contact@brewin.cafe</p>
+
+        <div class="mt-3">
+          <a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      <div class="col-md-6 mb-4">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3721.6742518153033!2d79.06101037380046!3d21.12554928444991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c1569a0899cd%3A0xdac28d688fc16e86!2sBrewin%20Cafe!5e0!3m2!1sen!2sin!4v1754132649570!5m2!1sen!2sin"
+         width="500" 
+         height="380" 
+         style="border:0;" 
+         allowfullscreen="" 
+         loading="lazy" 
+         referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+
+    <hr style="background-color: rgba(255,255,255,0.2);">
+    <p class="text-center mb-0" style="font-size: 0.9rem;">&copy; 2025 BREWIN Café. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+</body>
